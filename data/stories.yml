@@ -1,0 +1,149 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: questions 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ras_server
+  - action: utter_ras_server
+  - intent: vpn_server
+  - action: utter_vpn_server
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: questions 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: vpn_server
+  - action: utter_vpn_server
+  - intent: ras_server
+  - action: utter_ras_server
+  - intent: ping
+  - action: utter_ping
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: questions 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: vpn_server
+  - action: utter_vpn_server
+  - intent: ping
+  - action: utter_ping
+  - intent: ras_server
+  - action: utter_ras_server
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: buttons path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: os_info
+    - action: utter_osinfo
+    - intent: windows
+    - action: utter_windows
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: buttons path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: os_info
+    - action: utter_osinfo
+    - intent: linux
+    - action: utter_linux
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: buttons path 3
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: ai_algo
+    - action: utter_aialgo
+    - intent: ml_algo
+    - action: utter_mlalgo
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: buttons path 4
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: ai_algo
+    - action: utter_aialgo
+    - intent: dl_algo
+    - action: utter_dlalgo
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: buttons path 5
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: software_dev
+    - action: utter_softwaredev
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: buttons path 6
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: pro_lang
+    - action: utter_prolang
+    - intent: lowlevel
+    - action: utter_lowlevel
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: buttons path 7
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: it_support
+    - action: utter_itsupport
+    - intent: pro_lang
+    - action: utter_prolang
+    - intent: highlevel
+    - action: utter_highlevel
+    - intent: goodbye
+    - action: utter_goodbye
+
+#- story: collect message info
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: send_email
+#    entities:
+#    - email: "abc@gmail.com"
+#    - subject: "work"
+#    - message: "give update about work"
+#  - action: action_submit

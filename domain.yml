@@ -1,0 +1,104 @@
+version: "2.0"
+
+intents:
+  - greet
+  - it_support
+  - goodbye
+  - ras_server
+  - vpn_server
+  - ping
+  - it
+  - chitchat
+  - os_info
+  - windows
+  - linux
+  - ai_algo
+  - ml_algo
+  - dl_algo
+  - software_dev
+  - pro_lang
+  - lowlevel
+  - highlevel
+
+responses:
+  utter_greet:
+    - text: "Hello! How can i help you"
+
+  utter_itsupport:
+  - text: "What do you want to know related to IT?"
+    buttons:
+    - title: "Operating System"
+      payload: '/os_info'
+    - title: "AI Algorithms"
+      payload: '/ai_algo'
+    - title: "Software Development Techniques"
+      payload: '/software_dev'
+    - title: "Programming Languages"
+      payload: '/pro_lang'
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_ras_server:
+  - text: "RAS means Remote Access Server.  It allows operating the tool or information that typically resides on a network or IT devices through a combination of hardware and software"
+
+  utter_vpn_server:
+  - text: "VPN means Virtual Private Network. It is a private communications network often used by companies or organizations to communicate confidentially over a public network.  This is used by the mobile users in the network."
+
+  utter_ping:
+  - text: "Between two or more devices, to check the physical IP connectivity Ping command is used."
+
+  utter_it:
+  - text: "What do you want to know about IT?"
+
+  utter_chitchat:
+  - text: "fine dear, tell me your name? "
+
+  utter_osinfo:
+   - text: "Which operating system do you want to know about??"
+     buttons:
+     - title: "Windows Operating System"
+       payload: '/windows'
+     - title: "Linux Operating System"
+       payload: '/linux'
+
+  utter_windows:
+  - text: "Windows is a desktop operating system developed by Microsoft. For the past three decades, Windows has been the most popular operating system for personal computers."
+
+  utter_linux:
+  - text: "Linux is a Unix-like, open source and community-developed operating system for computers, servers, mainframes, mobile devices and embedded devices. It is supported on almost every major computer platform including x86, ARM and SPARC, making it one of the most widely supported operating systems."
+
+  utter_aialgo:
+  - text: "You want to know about which algorithms?"
+    buttons:
+    - title: "Machine Learning Algorithms"
+      payload: '/ml_algo'
+    - title: "Deep Learning Algorithms"
+      payload: '/dl_algo'
+
+  utter_mlalgo:
+  - text: "Common Machine Learning Algorithms are: Linear Regression, Logistic Regression, Decision Tree, SVM, Naive Bayes, kNN, K-Means, Random Forest."
+
+  utter_dlalgo:
+  - text: "Here is the list of most popular deep learning algorithms: Convolutional Neural Networks (CNNs),Long Short Term Memory Networks (LSTMs), Recurrent Neural Networks (RNNs), Generative Adversarial Networks (GANs), Radial Basis Function Networks (RBFNs), Multilayer Perceptrons (MLPs), Self Organizing Maps (SOMs), Deep Belief Networks (DBNs), Restricted Boltzmann Machines( RBMs)"
+
+  utter_softwaredev:
+  - text: "Most commonly used software development methodologies are: Agile development methodology, DevOps deployment methodology, Waterfall development method, Rapid application development."
+
+  utter_prolang:
+   - text: "Which programming languages do you want to know about? Choose an option below"
+     buttons:
+     - title: "Low level Programming Languages"
+       payload: '/lowlevel'
+     - title: "High Level Programming Languages"
+       payload: '/highlevel'
+
+  utter_lowlevel:
+   - text: "A low-level language is a programming language that works with a computer’s hardware elements and limitations."
+
+  utter_highlevel:
+   - text: "A high-level language is a programming language intended to streamline computer programming. Most popular high-level languages include C++, C#, Cobol, Fortran, Java, JavaScript, Objective, C, Pascal, Perl, PHP, Python,Swift"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

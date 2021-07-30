@@ -1,0 +1,152 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: it_support
+  examples: |
+    - need some help in IT
+    - I have IT related questions
+    - want to ask some questions about IT
+    - want to ask more question
+    - i have one more question related to IT
+    - wanna ask some questions
+    - need to ask some it related questions
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: ras_server
+  examples: |
+    - what is ras server?
+    - what is ras?
+    - ras stands for?
+    - RAS?
+
+- intent: vpn_server
+  examples: |
+    - what is vpn server?
+    - explain vpn server
+    - vpn meaning
+    - what does vpn server mean?
+
+- intent: ping
+  examples: |
+    - define ping
+    - ping meaning?
+    - what does ping mean?
+    - explain ping
+
+- intent: it
+  examples: |
+    - i need IT services
+    - want to ask some questions about IT
+    - IT realted questions
+    - can you help me in IT support
+
+- intent: chitchat
+  examples: |
+    - i wanna talk
+    - talk to me
+    - let's talk
+    - let's have some chit chat
+
+- intent: windows
+  examples: |
+    - what is windows
+    - windows os
+    - define computer windows
+    - computer windows
+
+- intent: os_info
+  examples: |
+    - what is os?
+    - os
+    - operating system
+    - define operating system
+    - define os?
+    - what is operating system?
+
+- intent: linux
+  examples: |
+    - what is linux?
+    - define linux?
+    - what's linux?
+    - what is meant by linux?
+    - explain about linux
+
+- intent: ai_algo
+  examples: |
+    - what are ai algorithms
+    - artificial intelligence algorithms
+    - ai algorithms
+    - names of ai algorithms
+    - artificial intelligence algo
+
+- intent: ml_algo
+  examples: |
+    - machine learning algororithms
+    - ml algo
+    - what are different machine learning algorithms?
+    - machine learning algorithms
+    - different ml algo
+
+- intent: dl_algo
+  examples: |
+    - what are deep learning algorithms?
+    - deep learning algo
+    - names of deep learning algorithms
+    - deep learning algorithms
+
+- intent: software_dev
+  examples: |
+    - what are software development methadologies?
+    - software development techniques
+    - what are different software development techniques?
+    - Name commonly used software development techniques
+
+- intent: pro_lang
+  examples: |
+    - what are different programming languagues?
+    - name different programming langugaes
+    - programming languages
+
+- intent: lowlevel
+  examples: |
+    - what are different low level programming languagues?
+    - name different low level programming langugaes
+    - low level programming languages
+
+- intent: highlevel
+  examples: |
+    - what are different high level programming languagues?
+    - name different high level programming langugaes
+    - high level programming languages
+
+
+

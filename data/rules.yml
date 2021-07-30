@@ -1,0 +1,60 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'hello' anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Show 'it support' every time user asks for it support questions
+  steps:
+  - intent: it_support
+  - action: utter_itsupport
+
+- rule: Show 'os info' everytime user asks about operating system
+  steps:
+    - intent: os_info
+    - action: utter_osinfo
+
+- rule: Show 'ai algorithms' everytime user asks about ai algorithms
+  steps:
+    - intent: ai_algo
+    - action: utter_aialgo
+
+- rule: Show 'software development' everytime user asks about software development
+  steps:
+    - intent: software_dev
+    - action: utter_softwaredev
+
+- rule: Show 'programming languages' everytime user asks about programming languages
+  steps:
+    - intent: pro_lang
+    - action: utter_prolang
+
+#
+#- rule: Activate Form
+#  steps:
+#  - intent: send_email
+#  - action: email_form
+#  - active_loop: email_form
+#
+#- rule: Submit Form
+#  condition:
+#  #condition that form is active
+#  - active_loop: email_form
+#  steps:
+#  #form is deativated
+#  - action: email_form
+#  - active_loop: null
+#  - slot_was_set:
+#    - requested_slot: null
+#   #the action we want to run when the form is submitted
+#  - action: action_submit
+
+
