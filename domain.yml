@@ -19,6 +19,15 @@ intents:
   - pro_lang
   - lowlevel
   - highlevel
+  - send_email
+
+slots:
+  email:
+    type: text
+  subject:
+    type: text
+  message:
+    type: text
 
 responses:
   utter_greet:
@@ -99,6 +108,18 @@ responses:
   utter_highlevel:
    - text: "A high-level language is a programming language intended to streamline computer programming. Most popular high-level languages include C++, C#, Cobol, Fortran, Java, JavaScript, Objective, C, Pascal, Perl, PHP, Python,Swift"
 
+actions:
+  - action_submit
+
+forms:
+  email_form:
+    email:
+    - type: from_text
+    subject:
+    - type: from_text
+    message:
+    - type: from_text
+    
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
