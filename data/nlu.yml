@@ -148,11 +148,6 @@ nlu:
     - name different high level programming langugaes
     - high level programming languages
 
-- intent: send_email
-  examples: |
-    - i want to send an email
-    - wanna send email
-    - want to send an email
-    - send email
+
 
 
